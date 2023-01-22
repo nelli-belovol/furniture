@@ -1,0 +1,89 @@
+@import 'scss';
+
+.aboutSection {
+  padding: 90px 0;
+  background-color: $accentColor;
+  height: auto;
+
+  .aboutWrap {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    @media screen and (max-width: $size-m) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .textWrap {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      margin-right: 30px;
+
+      @media screen and (max-width: $size-m) {
+        width: 100%;
+      }
+
+      & > h2 {
+        @include title-h2-light;
+        text-align: left;
+      }
+
+      & > p {
+        @include text;
+        text-align: left;
+        color: $titleColorLight;
+        margin-top: 80px;
+
+        @media screen and (max-width: $size-m) {
+          margin-top: 30px;
+        }
+      }
+
+      & > button {
+        width: 50%;
+        margin-top: 70px;
+        font-size: 18px;
+        line-height: 1.80857;
+        font-weight: 400;
+        color: $titleColorLight;
+        background-color: $buttonDark;
+        text-align: center;
+        padding: 10px 0;
+        border-radius: 5px;
+        border: none;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: 0.5s;
+
+        @media screen and (max-width: $size-m) {
+          margin-top: 40px;
+          width: 150px;
+        }
+        @media screen and (min-width: $size-l) {
+          width: 30%;
+        }
+
+        &:hover,
+        &:focus {
+          color: $titleColorDark;
+          background-color: $titleColorLight;
+        }
+      }
+
+      @media screen and (max-width: $size-m) {
+        margin-right: 0;
+      }
+    }
+
+    & > img {
+      width: 50%;
+
+      @media screen and (max-width: $size-m) {
+        width: 100%;
+        margin-top: 50px;
+      }
+    }
+  }
+}

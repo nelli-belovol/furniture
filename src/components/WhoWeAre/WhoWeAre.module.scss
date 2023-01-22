@@ -1,0 +1,73 @@
+@import 'scss';
+
+.whoWeAreSection {
+  padding: 90px 0 55px 0px;
+  height: auto;
+  color: white;
+  background-color: rgb(250, 188, 38);
+  background-image: linear-gradient(
+      to right,
+      rgba(250, 188, 38, 0.85),
+      rgba(250, 188, 38, 0.85)
+    ),
+    url('../../assets/images/img-2.png');
+  background-position: center;
+  background-size: cover;
+
+  .whoWeAreContainer {
+    & > h2 {
+      @include title-h2-light;
+      font-size: 36px;
+    }
+
+    & > h3 {
+      font-size: 18px;
+      color: $titleColorLight;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0;
+      font-weight: 400;
+      line-height: normal;
+      margin-top: 10px;
+    }
+    & > p {
+      text-align: center;
+      font-size: 16px;
+      color: $titleColorLight;
+      line-height: 24px;
+      margin-top: 30px;
+      font-weight: 300;
+    }
+    & > button {
+      width: 15%;
+      margin-top: 90px;
+      font-size: 18px;
+      line-height: 1.80857;
+      font-weight: 400;
+      color: $titleColorLight;
+      background-color: $buttonDark;
+      text-align: center;
+      padding: 10px 0;
+      border-radius: 5px;
+      border: none;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: 0.5s;
+
+      @media screen and (min-width: $size-m) and (max-width: $size-l) {
+        width: 25%;
+      }
+
+      @media screen and (max-width: $size-m) {
+        margin-top: 40px;
+        width: 150px;
+      }
+
+      &:hover,
+      &:focus {
+        color: #000;
+        background-color: $titleColorLight;
+      }
+    }
+  }
+}

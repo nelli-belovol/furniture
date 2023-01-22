@@ -1,0 +1,40 @@
+@import 'scss';
+
+.furnitures {
+  padding: 90px 0px;
+}
+
+.furnituresWrap {
+  display: flex;
+  flex-direction: column;
+
+  .textWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & > h2 {
+      @include title-h2-dark;
+    }
+    & > p {
+      @include text;
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+  .furnitureList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+    margin-top: 110px;
+
+    @media screen and (max-width: $size-m) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 0px;
+      grid-row-gap: 60px;
+    }
+  }
+}

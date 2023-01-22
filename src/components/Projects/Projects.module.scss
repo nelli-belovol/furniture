@@ -1,0 +1,20 @@
+@import 'scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 90px 15px 0 15px;
+
+  @media screen and (min-width: $size-m) {
+    padding: 90px 40px;
+  }
+
+  & > h2 {
+    @include title-h2-dark;
+  }
+  & > p {
+    @include text;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}

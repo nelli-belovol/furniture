@@ -1,0 +1,29 @@
+@import 'scss';
+.container {
+  padding-top: 50px;
+  padding-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (max-width: $size-m) {
+    padding: 90px 15px 90px 15px;
+  }
+
+  .textWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & > h2 {
+      @include title-h2-dark;
+      @media screen and (max-width: $size-m) {
+        font-size: 22px;
+      }
+    }
+
+    & > p {
+      @include text;
+      margin-top: 20px;
+    }
+  }
+}

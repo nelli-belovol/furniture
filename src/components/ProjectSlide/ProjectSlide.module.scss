@@ -1,0 +1,9 @@
+@import 'scss';
+
+.projectSlideList {
+  display: flex;
+  flex-direction: row;
+  @media screen and (max-width: $size-m) {
+    flex-direction: column;
+  }
+}
