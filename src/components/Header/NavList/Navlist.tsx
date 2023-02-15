@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import styled from '../Header/Header.module.scss';
+import styled from '../Header.module.scss';
 
 interface IProps {
   isOpenMenu?: boolean;

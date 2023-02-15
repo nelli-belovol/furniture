@@ -20,4 +20,4 @@ const Modal: FC<IProps> = ({ children, closeModal }) => {
   );
 };
 
-export default Modal;
+export  {Modal};

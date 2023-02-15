@@ -1,6 +1,7 @@
 import React from 'react';
 import { images } from 'assets/images';
-import ContactForm from '../Form/ContactForm';
+import { ContactForm } from './Form';
+
 import styled from './ContactUs.module.scss';
 
 const ContactUs = () => {
@@ -16,4 +17,4 @@ const ContactUs = () => {
   );
 };
 
-export default ContactUs;
+export  {ContactUs};

@@ -1,6 +1,6 @@
 import { Field, Form, Formik } from 'formik';
-import { images } from '../../assets/images';
-import { validationSchemaSubscribe } from '../../utils/validationSchema';
+import { images } from '../../../assets/images';
+import { validationSchemaSubscribe } from '../../../utils/validationSchema';
 
 import styled from './Info.module.scss';
 
@@ -88,4 +88,4 @@ const Info = () => {
   );
 };
 
-export default Info;
+export  {Info};

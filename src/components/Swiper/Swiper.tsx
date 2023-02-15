@@ -2,12 +2,12 @@ import React, { useEffect, useRef, useState } from 'react';
 import Slider from 'react-slick';
 import { MdArrowRightAlt } from 'react-icons/md';
 import { SlArrowRight, SlArrowLeft } from 'react-icons/sl';
-import HeroItem from '../HeroItem/HeroItem';
+import {HeroItem} from './HeroItem';
 import 'slick-carousel/slick/slick.scss';
 import 'slick-carousel/slick/slick-theme.scss';
-import CommentPage from '../CommentPage/CommentPage';
+import {CommentPage} from '../CommentPage/';
 import { useMediaQuery } from 'react-responsive';
-import ProjectSlide from 'components/ProjectSlide/ProjectSlide';
+import {ProjectSlide} from 'components/ProjectSlide/';
 import { breakArr } from 'utils/breakArr';
 import styled from './Swiper.module.scss';
 interface IProps {

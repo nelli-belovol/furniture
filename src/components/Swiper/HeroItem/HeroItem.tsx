@@ -21,4 +21,4 @@ const HeroItem: React.FC<IHeroItemProps> = ({ slider }) => {
   );
 };
 
-export default HeroItem;
+export  {HeroItem};

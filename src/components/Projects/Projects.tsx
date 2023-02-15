@@ -1,4 +1,3 @@
-import React from 'react';
 import { projects } from '../../utils/projects';
 
 import Swiper from '../Swiper/Swiper';
@@ -18,4 +17,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export  {Projects};

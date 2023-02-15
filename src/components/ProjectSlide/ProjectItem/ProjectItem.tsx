@@ -26,4 +26,4 @@ const ProjectItem: React.FC<IProjectItemProp> = ({ project }) => {
   );
 };
 
-export default ProjectItem;
+export  {ProjectItem};

@@ -19,4 +19,4 @@ const ServiceItem: React.FC<IProps> = ({ name, text, image }) => {
   );
 };
 
-export default ServiceItem;
+export  {ServiceItem};

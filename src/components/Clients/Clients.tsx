@@ -2,6 +2,7 @@ import React from 'react';
 import { comments } from '../../utils/comments';
 import Swiper from '../Swiper/Swiper';
 import styled from './Clients.module.scss';
+
 const Clients = () => {
   let size = 2;
   let subarray = [];
@@ -21,4 +22,4 @@ const Clients = () => {
   );
 };
 
-export default Clients;
+export  {Clients};

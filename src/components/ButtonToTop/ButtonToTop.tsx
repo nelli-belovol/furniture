@@ -28,4 +28,4 @@ const ButtonToTop = () => {
   );
 };
 
-export default ButtonToTop;
+export  {ButtonToTop};

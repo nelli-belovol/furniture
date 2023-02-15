@@ -1,7 +1,7 @@
 import { images } from 'assets/images';
-import Navlist from 'components/NavList/Navlist';
+import Navlist from 'components/Header/NavList/Navlist';
 import { useMediaQuery } from 'react-responsive';
-import Menu from 'components/Menu/Menu';
+import {Menu} from 'components/Header/Menu';
 import Connect from 'components/Connect/Connect';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { useState } from 'react';
@@ -53,4 +53,4 @@ const Header: React.FC<IProps> = ({ openModal }) => {
   );
 };
 
-export default Header;
+export  {Header};

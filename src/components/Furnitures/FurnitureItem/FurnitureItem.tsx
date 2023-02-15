@@ -29,4 +29,4 @@ const FurnitureItem: React.FC<IProps> = ({ furniture }) => {
   );
 };
 
-export default FurnitureItem;
+export {FurnitureItem};

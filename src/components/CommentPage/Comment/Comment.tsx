@@ -24,4 +24,4 @@ const Comment: React.FC<IProps> = ({ comment }) => {
   );
 };
 
-export default Comment;
+export  {Comment};
