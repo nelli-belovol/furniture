@@ -1,11 +1,9 @@
 import React from 'react';
 import styled from './HeroItem.module.scss';
 import { Link } from 'react-scroll';
+import { IHeroSlider } from '../types';
 export interface IHeroItemProps {
-  slider: {
-    title: string;
-    text: string;
-  };
+  slider: IHeroSlider;
 }
 
 const HeroItem: React.FC<IHeroItemProps> = ({ slider }) => {
@@ -21,4 +19,4 @@ const HeroItem: React.FC<IHeroItemProps> = ({ slider }) => {
   );
 };
 
-export  {HeroItem};
+export { HeroItem };

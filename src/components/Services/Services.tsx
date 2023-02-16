@@ -1,6 +1,5 @@
-import React from 'react';
 import { services } from '../../utils/services';
-import {ServiceItem} from './ServiceItem/';
+import { ServiceItem } from './ServiceItem/';
 import styled from './Services.module.scss';
 
 const Services = () => {
@@ -24,4 +23,4 @@ const Services = () => {
   );
 };
 
-export  {Services};
+export { Services };

@@ -1,4 +1,4 @@
-import { Field, Form, Formik } from 'formik';
+import { Field, Form, Formik, FormikHelpers } from 'formik';
 import { images } from '../../../assets/images';
 import { validationSchemaSubscribe } from '../../../utils/validationSchema';
 
@@ -56,7 +56,14 @@ const Info = () => {
         <Formik
           initialValues={{ email: '' }}
           validationSchema={validationSchemaSubscribe}
-          onSubmit={(values: { email: string }, { resetForm }: any) => {
+          onSubmit={(
+            values: { email: string },
+            {
+              resetForm,
+            }: FormikHelpers<{
+              email: string;
+            }>,
+          ) => {
             handleSubmit(values);
             resetForm();
           }}
@@ -88,4 +95,4 @@ const Info = () => {
   );
 };
 
-export  {Info};
+export { Info };

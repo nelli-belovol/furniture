@@ -1,11 +1,10 @@
-import React from 'react';
 import { comments } from '../../utils/comments';
 import Swiper from '../Swiper/Swiper';
 import styled from './Clients.module.scss';
 
 const Clients = () => {
-  let size = 2;
-  let subarray = [];
+  const size = 2;
+  const subarray = [];
   for (let i = 0; i < Math.ceil(comments.length / size); i++) {
     subarray[i] = comments.slice(i * size, i * size + size);
   }
@@ -22,4 +21,4 @@ const Clients = () => {
   );
 };
 
-export  {Clients};
+export { Clients };

@@ -1,6 +1,5 @@
-import React from 'react';
 import { furnitures } from '../../utils/furnitures';
-import {FurnitureItem} from './FurnitureItem';
+import { FurnitureItem } from './FurnitureItem';
 import styled from './Furnitures.module.scss';
 
 const Furnitures = () => {
@@ -21,4 +20,4 @@ const Furnitures = () => {
   );
 };
 
-export {Furnitures};
+export { Furnitures };

@@ -8,8 +8,9 @@ import 'slick-carousel/slick/slick-theme.scss';
 import { CommentPage } from './CommentPage';
 import { useMediaQuery } from 'react-responsive';
 import { ProjectSlide } from 'components/Swiper/ProjectSlide';
-import { breakArr } from 'utils/breakArr';
+import { breakArr } from 'components/Swiper/breakArr';
 import styled from './Swiper.module.scss';
+
 interface IProps {
   items: any;
   name: string;
@@ -32,7 +33,7 @@ export const Swiper: React.FC<IProps> = ({ items, name }) => {
 
   const sliderRef = useRef<Slider>(null);
 
-  var settings = {
+  const settings = {
     arrows: false,
     dots: true,
     className: 'slider',
@@ -99,11 +100,9 @@ export const Swiper: React.FC<IProps> = ({ items, name }) => {
       {name === 'heroSliders' ? (
         <div className={styled.sliderWrap}>
           <Slider {...settings} ref={sliderRef}>
-            {items.map(
-              (item: { title: string; text: string; id: string | number }) => (
-                <HeroItem slider={item} key={item.id} />
-              ),
-            )}
+            {items.map((item: { title: string; text: string; id: number }) => (
+              <HeroItem slider={item} key={item.id} />
+            ))}
           </Slider>
         </div>
       ) : name === 'projects' ? (

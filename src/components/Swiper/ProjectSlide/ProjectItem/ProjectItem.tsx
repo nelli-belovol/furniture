@@ -1,12 +1,9 @@
+import { IProject } from 'components/Swiper/types';
 import React from 'react';
 import styled from './ProjectItem.module.scss';
 
 export interface IProjectItemProp {
-  project: {
-    title: string;
-    image: string;
-    id: number | string;
-  };
+  project: IProject;
 }
 
 const ProjectItem: React.FC<IProjectItemProp> = ({ project }) => {
@@ -26,4 +23,4 @@ const ProjectItem: React.FC<IProjectItemProp> = ({ project }) => {
   );
 };
 
-export  {ProjectItem};
+export { ProjectItem };
