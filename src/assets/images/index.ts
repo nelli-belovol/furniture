@@ -1,6 +1,3 @@
-import headerBg from './header-bg.png';
-import bannerBg from './banner-bg.png';
-import bannerBg1 from './banner-bg1.png';
 import logo from './logo.png';
 import service1 from './icon-1.png';
 import service2 from './icon-2.png';

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Comment} from './Comment';
+import { Comment } from './Comment';
 import styled from './CommentPage.module.scss';
 
 interface IProps {
@@ -21,4 +21,4 @@ const CommentPage: React.FC<IProps> = ({ commentsPair }) => {
   );
 };
 
-export  {CommentPage};
+export { CommentPage };

@@ -1,4 +1,3 @@
-import React from 'react';
 import { useEffect, useState } from 'react';
 import { AiOutlineArrowUp } from 'react-icons/ai';
 import styled from './ButtonToTop.module.scss';
@@ -6,17 +5,18 @@ import styled from './ButtonToTop.module.scss';
 const ButtonToTop = () => {
   const [backToTop, setBackToTop] = useState(false);
 
-  useEffect(() => {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 100) {
-        setBackToTop(true);
-      } else setBackToTop(false);
-    });
-  }, []);
-
   const scrollUp = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+  const changeVisibilityButton = () =>
+    window.scrollY > 100 ? setBackToTop(true) : setBackToTop(false);
+
+  useEffect(() => {
+    window.addEventListener('scroll', changeVisibilityButton);
+    return () => window.removeEventListener('scroll', changeVisibilityButton);
+  }, []);
+
   return (
     <>
       {backToTop && (
@@ -28,4 +28,4 @@ const ButtonToTop = () => {
   );
 };
 
-export  {ButtonToTop};
+export { ButtonToTop };

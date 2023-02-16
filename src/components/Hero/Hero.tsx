@@ -1,11 +1,10 @@
-import {Header} from '../Header';
+import { Header } from './Header';
 import Swiper from '../Swiper/Swiper';
 import { heroSliders } from '../../utils/heroSliders';
 import { useState } from 'react';
 import styled from './Hero.module.scss';
 import { Modal } from 'components/Modal';
-import { Login } from 'components/Login';
-
+import { Login } from './Login';
 
 const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -33,4 +32,4 @@ const Hero = () => {
   );
 };
 
-export  {Hero};
+export { Hero };

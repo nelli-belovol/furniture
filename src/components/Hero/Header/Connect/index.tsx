@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { MdArrowRightAlt } from 'react-icons/md';
-import styled from '../Header/Header.module.scss';
+import styled from '../Header.module.scss';
 
 interface IProps {
   openModal: () => void;
@@ -54,4 +54,4 @@ const Connect: React.FC<IProps> = ({ openModal }) => {
   );
 };
 
-export default Connect;
+export { Connect };

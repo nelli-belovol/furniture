@@ -1,4 +1,4 @@
-import {ProjectItem} from 'components/ProjectSlide/ProjectItem';
+import { ProjectItem } from 'components/Swiper/ProjectSlide/ProjectItem';
 import React from 'react';
 
 import styled from './ProjectSlide.module.scss';
@@ -17,4 +17,4 @@ const ProjectSlide: React.FC<IProps> = ({ projects }) => {
   );
 };
 
-export  {ProjectSlide};
+export { ProjectSlide };

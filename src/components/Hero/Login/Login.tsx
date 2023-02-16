@@ -1,4 +1,3 @@
-import React from 'react';
 import { Field, Form, Formik } from 'formik';
 import { validationSchemaLogin } from 'utils/validationSchema';
 
@@ -83,4 +82,4 @@ const Login = () => {
   );
 };
 
-export  {Login};
+export { Login };
